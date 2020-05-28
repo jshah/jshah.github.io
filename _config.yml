@@ -1,9 +1,11 @@
 # Dependencies
 plugins:
+  - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-gist
 
 markdown:         kramdown
-highlighter:      pygments
+highlighter:      rouge
 
 # Permalinks
 permalink:        pretty
@@ -12,7 +14,7 @@ permalink:        pretty
 title:            jshah
 tagline:          'Personal Blog'
 description:      'A personal blog'
-url:              https://jshah.dev
+url:              https://jshah.github.io
 baseurl:          /
 
 author:
