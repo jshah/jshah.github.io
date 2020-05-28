@@ -1,8 +1,7 @@
-# Plugins
+# Dependencies
 plugins:
   - jekyll-paginate
 
-# Dependencies
 markdown:         kramdown
 highlighter:      pygments
 
@@ -20,6 +19,7 @@ author:
   name:           'Jay Shah'
   url:            https://twitter.com/jshah111
 
+# Pagination
 paginate:         5
 paginate_path: "page:num"
 
