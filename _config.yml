@@ -14,7 +14,7 @@ permalink:        pretty
 title:            jshah
 tagline:          'Personal Blog'
 description:      'A personal blog'
-url:              https://jshah.github.io
+url:              https://jshah.dev
 baseurl:          /
 
 author:
@@ -29,4 +29,4 @@ paginate_path: "page:num"
 version:          2.1.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/jshah/blog

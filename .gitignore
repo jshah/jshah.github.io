@@ -7,3 +7,6 @@ vendor
 # intellij
 .idea/
 *.iml
+
+# mac
+.ds_store
