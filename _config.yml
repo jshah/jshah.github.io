@@ -12,7 +12,7 @@ permalink:        pretty
 
 # Setup
 title:            jshah
-tagline:          'Personal Blog'
+tagline:          'Blog'
 description:      'A personal blog'
 url:              https://jshah.dev
 baseurl:          /
