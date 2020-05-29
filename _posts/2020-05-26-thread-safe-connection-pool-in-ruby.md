@@ -4,7 +4,7 @@ title:  "Thread Safe Connection Pool in Ruby"
 date:   2020-05-26 10:00:00 -0700
 categories: rails ruby connection_pool threads
 ---
-To demonstrate a thread safe implementation of a connection pool, we will use a class instance variable, a Mutex, and the [connection_pool](https://github.com/mperham/connection_pool) gem.
+To demonstrate a thread safe implementation of a connection pool, we will use a class instance variable, a Mutex, and the [connection_pool](https://github.com/mperham/connection_pool){:target="_blank"} gem.
 
 ### Class Instance Variables
 
@@ -59,13 +59,13 @@ puts Example.my_value # my_value is still 2 at the class level
 
 When `my_value` was accessed by class methods, its value was only accessed and updated at the class level. When accessed as an instance method, it was accessed and updated in a separate memory space at the instance level.
 
-If you want to learn more about class instance variables, take a look at this [article](https://www.codegram.com/blog/understanding-class-instance-variables-in-ruby/) and this [post](https://stackoverflow.com/questions/15773552/ruby-class-instance-variable-vs-class-variable).
+If you want to learn more about class instance variables, take a look at this [article](https://www.codegram.com/blog/understanding-class-instance-variables-in-ruby/){:target="_blank"} and this [post](https://stackoverflow.com/questions/15773552/ruby-class-instance-variable-vs-class-variable){:target="_blank"}.
 
 Now that we have a way to access the *same* connection pool across threads, we need to actually create the pool so threads can use it.
 
 ### Connection Pool
 
-The [connection_pool](https://github.com/mperham/connection_pool) gem will allow us to create a pool of connections which we can use to grab a connection and return it after we're done using it. This allows us to specify a static number of connections and forces our threads to share those connections.
+The [connection_pool](https://github.com/mperham/connection_pool){:target="_blank"} gem will allow us to create a pool of connections which we can use to grab a connection and return it after we're done using it. This allows us to specify a static number of connections and forces our threads to share those connections.
 
 ```ruby
 class ConnectionManager
@@ -245,8 +245,8 @@ updating my_var
 
 Now, `@my_var` is only initialized once by the first thread and returned in consequent calls and threads.
 
-There you have it! How to a create thread safe connection pool using class instance variables, a Mutex, and the [connection_pool](https://github.com/mperham/connection_pool) gem.
+There you have it! How to a create thread safe connection pool using class instance variables, a Mutex, and the [connection_pool](https://github.com/mperham/connection_pool){:target="_blank"} gem.
 
 ### References
 
-1. [https://ruby-doc.org/core-2.6/Mutex.html](https://ruby-doc.org/core-2.6/Mutex.html)
+1. [https://ruby-doc.org/core-2.6/Mutex.html](https://ruby-doc.org/core-2.6/Mutex.html){:target="_blank"}
