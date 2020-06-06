@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My Essential Mac Applications"
-date:   2020-06-08 10:00:00 -0700
+date:   2020-06-4 10:00:00 -0700
 categories: mac applications software
 ---
 A list of the essential Mac applications I have installed on my computer. Hope you find something new or useful.
