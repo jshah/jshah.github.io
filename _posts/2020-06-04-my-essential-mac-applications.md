@@ -39,11 +39,11 @@ Alfred is basically an advanced spotlight search application. It is able to sear
 
 A simple and elegant screenshot and screen recording app. CleanShot X boasts tons of features and it's like you're getting 6 apps in one. My favorite features include its annotation tools, scrolling capture, and ability to hide icons when taking screenshots. Best of all, interactions with the app feel responsive and rewarding.
 
-If CleanShot X has too steep of a price tag, some alternatives to consider are [Monosnap](https://monosnap.com/) and [Screentray](https://screentray.com/), both free.
+If CleanShot X has too steep of a price tag, some alternatives to consider are [Monosnap](https://monosnap.com/){:target="_blank"} and [Screentray](https://screentray.com/){:target="_blank"}, both free.
 
 <div class="notion-callout">
 <span class="notion-icon">💡</span>
-<div><strong>Pro tip:</strong> You can trial CleanShot X for 7 days through <a href="https://setapp.com/">Setapp</a>.</div>
+<div><strong>Pro tip:</strong> You can trial CleanShot X for 7 days through <a href="https://setapp.com/" target="_blank">Setapp</a>.</div>
 </div>
 
 <div class="notion-callout">
