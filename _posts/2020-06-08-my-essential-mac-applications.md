@@ -76,6 +76,19 @@ A simple clipboard manager. Every time you copy something, Flycut keeps it in it
 <div><strong>Pro tip:</strong> Update Flycut preferences to remember the last 30 items. You will have a longer history to reference while fitting it comfortably on your screen.</div>
 </div>
 
+### [Glance](https://apps.apple.com/us/app/glance-quick-look-plugin/id1513574319){:target="_blank"} (Free)
+
+![glance](/public/images/glance_app.jpg)
+
+Glance is a all-in-one quick look plugin.
+It provides beautiful previews for files that macOS doesn't support out of the box.
+Glance has been a huge boost to my productivity when I want to quickly look at code (supports many languages) or markdown in a file through finder.
+
+<div class="notion-callout">
+<span class="notion-icon">💡</span>
+<div><strong>Pro tip:</strong> Press <code>space</code> on a file in finder to quickly preview the file.</div>
+</div>
+
 ### [Google Photos Backup and Sync](https://photos.google.com/apps){:target="_blank"} (Free)
 
 Automatically backs up photos on your Mac, connected cameras, and SD cards to Google Photos. This is even better if you're a Pixel user since you get unlimited free storage of Photos.
@@ -107,11 +120,11 @@ Self dubbed as a "All-in-one" workspace, it's hard to summarize everything you c
 <div><strong>Pro tip:</strong> Use the templates they provide to get started and watch youtube videos on how others have set up Notion.</div>
 </div>
 
-### [Spectacle](https://www.spectacleapp.com/){:target="_blank"} (Free)
+### [Rectangle](https://rectangleapp.com/){:target="_blank"} (Free)
 
-A menu bar app to move and resize windows. It allows you to use the real estate on your monitor efficiently.
-
-**Note:** Spectacle isn't actively maintained anymore but it still works as of macOS version 10.15 (Catalina). I still use it because of it's simplicity but when it eventually loses compatibility, a good alternative will be [BetterTouchTool](https://folivora.ai/).
+A menu bar app to move and resize windows.
+It allows you to use the real estate on your monitor efficiently.
+You can use hot keys or your mouse to snap windows to a section of your monitor.
 
 <div class="notion-callout">
 <span class="notion-icon">💡</span>
