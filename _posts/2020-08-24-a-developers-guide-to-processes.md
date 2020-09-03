@@ -69,6 +69,7 @@ The heap is used for dynamic memory allocation for a process during run time.
 
 The stack is used for local variables. Space on the stack is reserved for local variables when they are declared, and the space is freed up when the variables go out of scope.
 
+
 > Note that the stack and the heap start at opposite ends of a process's free space and grow towards each other. If they ever meet, then either a stack overflow error will occur, or else a call to `new` or `malloc` will fail due to insufficient memory available.
 
 ## Process State
@@ -90,7 +91,7 @@ Some processes might cycle between the states of ready, running, and waiting rep
 Process control block is the information the operating system stores about processes. The PCB stores the following information.
 
 - Process State - Current state of the process i.e. ready, running, waiting, etc.
-- Process ID **-** Unique identification of each process in the operating system.
+- Process ID - Unique identification of each process in the operating system.
 - Pointer - A pointer to parent process
 - Program Counter - A pointed to the address of the next instruction to be executed for the process.
 - CPU registers - Various CPU registers where processes need to be stored for execution when in running state.
