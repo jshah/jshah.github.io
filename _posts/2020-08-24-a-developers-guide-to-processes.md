@@ -5,47 +5,47 @@ date:   2020-08-24 10:00:00 -0700
 categories: developer guide processes threads 
 ---
 
-This article is part one of a two part series where you will learn about processes, threads, and the differences between them. Throughout the series, we'll cover the fundamental concepts that explain what they are, how they work, and how they differ.
+This article is part one of a three-part series where you will learn about processes, threads, and the differences between them. Throughout the series, we'll cover the fundamental concepts that explain what they are, how they work, and how they differ.
 
 Part two will be linked here when it is published.
 
 # Process
 
-> In computing, a process is the instance of a computer program that is being executed by one or many threads. It contains the program code and its activity.
+> In computing, a process is the instance of a computer program executed by one or many threads. It contains the program code and its activity.
 
-Ignoring the thread portion in this definition for now, we can simply define a process as a instance of a executing computer program. 
+Ignoring the thread portion in this definition, we can define a process as an instance of an executing computer program. 
 
 The computer program doesn't have to be large or complex. Any program that can execute validly is considered a process.
 
-### Short lived process
+### Short-lived process
 
 A program that runs briefly and exits is considered a process. 
 
 ```python
 x = 1
-print("I'm a short lived process")
+print("I'm a short-lived process")
 ```
 
-### Long running process
+### Long-running process
 
-Running a infinite loop is considered a process. 
+Running an infinite loop is considered a process. 
 
 ```python
 while True:
-  print("I'm a long running process")
+  print("I'm a long-running process")
   time.sleep(1)
 
 ```
 
-While simple programs were chosen to make it clear, more complex programs such as a web server or a calendar application would also be considered processes.
+While these are simple programs, more complex programs such as a web server or a calendar application would also be considered processes.
 
 ### Process per instance
 
-A single instance of a program is considered as one process. Multiple instances of a program would be multiple processes. 
+A single instance of a program is one process. Multiple instances of a program would be multiple processes.
 
-For example, if you open two terminals and run a program in each terminal, you would have two separate processes. For a web server, scaling it to three servers would mean you have three separate processes.
+For example, if you open two terminals and run a program in each terminal, you would have two separate processes. For a web server, scaling it to three servers would mean you have three different processes.
 
-We are referring to parent processes here. When programs are executed, they create a parent process. They may or may not  `fork` or `spawn` child processes. We will cover this in the "Process Creation" section.
+We are referring to parent processes here. When programs are executed, they create a parent process. They may or may not fork or spawn child processes. We will cover this in the "Process Creation" section.
 
 ## Process Memory
 
@@ -67,7 +67,7 @@ The heap is used for dynamic memory allocation for a process during run time.
 
 ### Stack
 
-The stack is used for local variables. Space on the stack is reserved for local variables when they are declared, and the space is freed up when the variables go out of scope.
+The stack is used for local variables. Space on the stack is reserved for local variables when declared, and space is freed up when the variables go out of scope.
 
 
 > Note that the stack and the heap start at opposite ends of a process's free space and grow towards each other. If they ever meet, then either a stack overflow error will occur, or else a call to `new` or `malloc` will fail due to insufficient memory available.
@@ -77,14 +77,14 @@ The stack is used for local variables. Space on the stack is reserved for local 
 During the lifecycle of a process, it may be in one of five states.
 
 1. Start - Initial state when a process is first started or created.
-2. Ready - Ready processes are waiting to have the processor allocated to them by the operating system so that they can run.
+2. Ready - Ready processes are waiting to have the processor allocated to them by the operating system to run.
 3. Running - Once the process has been assigned to a processor by the OS scheduler, the process state is set to running and the processor executes its instructions.
 4. Waiting - Process moves into the waiting state if it needs to wait for a resource, such as waiting for user input, or waiting for a file to become available.
-5. Terminated - Once the process finishes its execution, or it is terminated by the operating system, it is moved to the terminated state.
+5. Terminated - Once the process finishes its execution or is terminated by the operating system, it is moved to the terminated state.
 
 ![process_state.jpg](/public/images/process_state.jpg)
 
-Some processes might cycle between the states of ready, running, and waiting repeatedly due to their program instruction (long running process example). Other processes might not need to wait and will just go from start, ready, running, and then to terminated (short lived process example). The lifecycle of a program will depend on the underlying program.
+Some processes might cycle between the states of ready, running, and repeatedly waiting due to their program instruction (long-running process example). Other processes might not need to wait and will go from the start, ready, running, and then to terminated (short-lived process example). The lifecycle of a program will depend on the underlying program.
 
 ## Process Control Block (PCB)
 
@@ -106,7 +106,7 @@ While it's important to be aware of each piece of information that a operating s
 
 ### Foreground Process
 
-Foreground processes require a user to start them or interact with them. They are initialized through either running a command in a shell or through starting applications through a graphical user interface (GUI).
+Foreground processes require a user to start them or interact with them. They are initialized by running a command in a shell or starting applications through a graphical user interface (GUI).
 
 ```bash
 # Running ls is considered a foreground process
@@ -131,9 +131,9 @@ When running a background process through a shell, you do not have to wait for t
 
 ### Daemon Process
 
-Daemons are a special type of a background process that run unattended and are not under the control of a user. They are usually started when the system starts and they run until the system stops. A daemon process typically performs systems services and is available at all times to a task or a user. They are started by the root user or root shell and can only be stopped by the root user.
+Daemons are a special type of background process that runs unattended and is not under user control. They are usually started when the system starts, and they run until the system stops. A daemon process typically performs systems services and is available to a task or a user. They are started by the root user or root shell and can only be stopped by the root user.
 
-An example of a daemon process is the `cron` process. The `cron` process executes commands at a scheduled date and time. Various system tasks are handled by the `cron` process at regular intervals.
+An example of a daemon process is the `cron` process. The `cron` process handles various system tasks at regular intervals.
 
 ### Zombie Process
 
@@ -145,16 +145,16 @@ Processes create other processes using the  `fork` or `spawn` system call.  The 
 
 ### Init Process
 
-You might ask yourself, if processes create other processes, how is the first process created?
+You might ask yourself if processes create other processes, how is the first process created?
 
 When the operating system first boots up, the kernel first creates a `sched`  process (for UNIX systems) and is given PID 0. The `sched` process then creates the `init` process and is given PID 1. The `init` process creates all system daemon processes, user login processes, and manages all other processes on the system. It is considered to be the mother of all processes.
 
 For example, when you launch an application on your computer, the `init` process is the one that creates that application process and becomes the parent of that application process.
 
-An interesting example is the workflow of opening up your terminal and running the `ls` command. 
+An interesting example is a workflow of opening up your terminal and running the `ls` command. 
 
-1. The `init` process creates the terminal process and become its parent. 
-2. The terminal process then creates the `ls` process and become its parent. 
+1. The `init` process creates the terminal process and becomes its parent. 
+2. The terminal process then creates the `ls` process and becomes its parent. 
 
 Since the `ls` process was run in the terminal process, the terminal would be the process that creates and runs `ls` not `init`. The process hierarchy would look something like below.
 
@@ -183,7 +183,7 @@ For UNIX, the `spawn` behavior is done by combining `fork` and then calling `exe
 
 ### Independent Process
 
-Independent processes are processes that operate concurrently on a operating system and they do not affect other processes nor are they affected by other processes. 
+Independent processes operate concurrently on an operating system, and they do not affect other processes nor are they affected by other processes.
 
 For example, a parent and a child process that are running concurrently and not sharing memory between each other even if the underyling program is the same.
 
@@ -191,14 +191,14 @@ For example, a parent and a child process that are running concurrently and not 
 
 Processes might need to communicate with each other for the following reasons.
 
-- Information Sharing - Several processes may need to access to the same file.
+- Information Sharing - Several processes may need to access the same file.
 - Computation speedup - A problem can be solved faster if it can be broken down into sub-tasks to be solved concurrently (especially when multiple processors are involved).
-- Modularity - It may be easier to separate a complex task into separate subtasks rather than having many processes run the complex task.
+- Modularity - It may be easier to separate a complex task into separate subtasks than having many processes run the complex task.
 - Convenience - A user can run several programs at the same time to perform some task.
 
 There are two main types of communication that processes use to cooperate: Shared Memory systems or Message Passing systems. 
 
-We won't go over the communication types as it is not extremely common for developers to use them. However, if you ever come across a situation where it could be helpful, it is important to know that they exist. 
+We won't go over the communication types as it is not extremely common for developers to use them. However, if you ever come across a situation where it could be helpful, it is essential to know that they exist. 
 This [article](https://www.geeksforgeeks.org/inter-process-communication-ipc/){:target="_blank"} covers interprocess communication in detail if you are interested.
 
 # References
