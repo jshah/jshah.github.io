@@ -27,6 +27,6 @@ I attended the University of California, Davis and graduated with a bachelors in
 
 ### Work
 
-Currently a software engineer working at [Sisense](https://sisense.com){:target="_blank"}.
-In the past, I've worked at [Workday](https://workday.com){:target="_blank"}, [Splunk](https://splunk.com){:target="_blank"},
+Currently a software engineer working at [DataGrail](https://www.datagrail.io/){:target="_blank"}.
+In the past, I've worked at [Sisense](https://sisense.com){:target="_blank"}, [Workday](https://workday.com){:target="_blank"}, [Splunk](https://splunk.com){:target="_blank"},
 and [Riverbed](https://riverbed.com){:target="_blank"}.
