@@ -5,10 +5,6 @@ date:   2020-08-24 10:00:00 -0700
 categories: developer guide processes threads 
 ---
 
-This article is part one of a three-part series where you will learn about processes, threads, and the differences between them. Throughout the series, we'll cover the fundamental concepts that explain what they are, how they work, and how they differ.
-
-Part two will be linked here when it is published.
-
 # Process
 
 > In computing, a process is the instance of a computer program executed by one or many threads. It contains the program code and its activity.
