@@ -7,19 +7,8 @@ Hey there, I'm Jay Shah. I'm a software developer currently living in San Franci
 
 I created this blog to write about my experiences, share my technical knowledge, and to have something to look back on when I'm older.
 
-### Background
+Hope you find something fun or helpful!
 
-I was born in Mumbai, India and moved to the US when I was seven years old.
-I grew up in the Bay Area after short stints in New Jersey and Chicago.
-
-As I grew up, I had a hard time figuring out who I wanted to be or what I wanted to do.
-I joined clubs, played sports, and picked up any extracurriculars that I came across.
-All in the hope that I would discover my passion.
-
-Fortunately, I'm still on that search today. I say fortunately because I've come to embrace my search.
-It's led me to pick up a number of hobbies and skills that have provided me with unique perspectives.
-As I continue down my path, I hope to create things that are valuable to the world.
-Until then, I'll be obsessing over my current hobbies and projects until I find the next thing to do.
 
 ### Education
 
