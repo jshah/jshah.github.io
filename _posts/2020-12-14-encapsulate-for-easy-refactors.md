@@ -4,6 +4,7 @@ title:  "Encapsulate For Easy Refactors"
 date:   2020-12-14 10:00:00 -0700
 categories: ruby rails refactor
 ---
+![encapsulate-for-easy-refactors](/public/images/encapsulate-for-easy-refactors.png)
 
 An application is a living, breathing code base that will continually change over time. As the application evolves, early decisions won't scale, and shortcuts taken will reveal technical debt. When the time comes to address these problems, one thing you can start doing today to make refactoring tomorrow easier is using encapsulation.
 
