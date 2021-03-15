@@ -33,6 +33,12 @@ Alfred is basically an advanced spotlight search application. It is able to sear
 <div><strong>Pro tip:</strong> I've replaced my spotlight search binding (<code>cmd + space</code>) so it opens Alfred instead. </div>
 </div>
 
+### [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12){:target="_blank"} (Free)
+
+![amphetamine.jpg](/public/images/amphetamine.png)
+
+An app to keep your mac awake. Amphetamine is simple to use but also supports advanced configurations. I mainly use it to keep my awake indefinitely but it also supports keeping your mac awake based on time (minutes, hours, etc.), application, or action (while downloading).
+
 ### [CleanShot X](https://getcleanshot.com/){:target="_blank"} ($29)
 
 ![cleanshot](/public/images/cleanshotx.jpg)
