@@ -10,3 +10,7 @@ vendor
 
 # mac
 .ds_store
+
+# ruby
+.bundle/
+.ruby-version
