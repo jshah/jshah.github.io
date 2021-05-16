@@ -29,16 +29,9 @@ Your software can fit into the user’s day in numerous and unexpected ways: at 
 
 Your software should self-serve as much as possible. The user should be able to find the information they need and understand what actions do without your involvement. It gives freedom and autonomy to the user and, importantly, makes your software do the work for you.
 
-#### Is my UI clear and consistent?
+#### Is my UI consistent?
 
-Your UI is how you communicate with the user, which makes it crucial to pick clear and consistent components. Believe it or not, users are great at picking up patterns and become familiar with them over time. Whatever design you choose, make sure your product is consistent and stays consistent over its lifetime.
-
-Understanding the following interface categories and elements will help you communicate effectively to your users:
-
-- **Input Controls**: checkboxes, radio buttons, dropdown lists, list boxes, buttons, toggles, text fields, date field
-- **Navigational Components**: breadcrumb, slider, search field, pagination, slider, tags, icons
-- **Informational Components**: tooltips, icons, progress bar, notifications, message boxes, modal windows
-- **Containers**: accordion, grids
+Your UI is how you communicate with the user, making it crucial to pick clear and consistent components. Believe it or not, users are great at picking up patterns and become familiar with them over time. Thus, components from one part of your product should look and behave the same way from another. This will lead to a more natural and frictionless experience for your users.
 
 #### Is progress visible and easily understood?
 
