@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Encapsulate For Easy Refactors"
+title:  "Encapsulate for Easy Refactors"
 date:   2020-12-14 10:00:00 -0700
 categories: ruby rails refactor
 ---
