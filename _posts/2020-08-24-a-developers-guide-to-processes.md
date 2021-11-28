@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Developer's Guide To Processes"
+title:  "A Developer's Guide to Processes"
 date:   2020-08-24 10:00:00 -0700
 categories: developer guide processes threads 
 ---

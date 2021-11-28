@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Build For The User"
+title:  "Build for the User"
 date:   2021-05-10 10:00:00 -0700
 categories: software philosophy application design
 ---

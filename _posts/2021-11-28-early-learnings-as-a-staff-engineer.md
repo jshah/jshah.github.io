@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Early Learnings As A Staff Engineer"
+title:  "Early Learnings as a Staff Engineer"
 date:   2021-11-28 10:00:00 -0700
 categories: staff-engineer career development
 ---
