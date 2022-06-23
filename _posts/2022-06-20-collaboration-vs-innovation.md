@@ -9,7 +9,7 @@ You’ve probably heard the proverb, “If you want to go fast, go alone. If you
 
 I’ve seen a similar tradeoff between collaboration and innovation at startups. Teams often try to optimize for both by collaborating to develop an innovative solution. It’s a reasonable strategy for startups that want to gain market share but also want each member to gain knowledge for the future.
 
-However, this poses a dilemma as innovation usually comes in the form of creative solutions, and highly collaborative groups don’t usually come up with the best solution. From this [study](https://sloanreview.mit.edu/article/improving-the-rhythm-of-your-collaboration/) from MIT Sloan, “groups with constant interaction were the most consistent, producing a higher average quality of solution but finding the very best ones much less frequently.” In other words, solving a problem as a group will slow you down on your way to finding the most innovative solution.
+However, this poses a dilemma as innovation usually comes in the form of creative solutions, and highly collaborative groups don’t usually come up with the best solution. From the [Improving the Rhythm of Your Collaboration](https://sloanreview.mit.edu/article/improving-the-rhythm-of-your-collaboration/) study from MIT Sloan, “groups with constant interaction were the most consistent, producing a higher average quality of solution but finding the very best ones much less frequently.” In other words, solving a problem as a group will slow you down on your way to finding the most innovative solution.
 
 ## The Problem at Startups
 
@@ -43,5 +43,6 @@ Some ideas to create this harmonic rhythm:
 - Create true no meeting days that last more than one day. Makers adhere to the [Maker’s schedule, not the manager’s](http://www.paulgraham.com/makersschedule.html) schedule, and need more than a few hours to innovate.
 - Collaboration sessions should be to share factual information and learnings. This will allow the team to build off each other without biasing towards any one solution.
 - Encourage individuals to create throw-away prototypes, go backward, and break things. This fosters an environment where you can be nimble and react to new information and ideas.
+- Encourage documentation like technical specifications and RFCs. This allows the writer to communicate thoughts clearly and allows your peers to review and reference the doc at leisure.
 
 I’ll leave you with this quote from the MIT Sloan study: “Too little communication, and there’s no learning and no synergy. Too much communication, and all the minds end up in the same place, focusing on the same types of solutions.”
